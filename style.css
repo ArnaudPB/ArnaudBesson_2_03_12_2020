@@ -124,9 +124,6 @@ a {
     min-width: 3rem;
     min-height: 3rem;
     background-color: var(--color-grey);
-}
-
-.search__form__wrapper-icon--left {
     border-radius: 1rem 0rem 0rem 1rem;
 }
 
