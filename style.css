@@ -649,9 +649,8 @@
             margin-left: -5vw;
             width: 95vw;
         }
-        .most-popular__header,
-        .popular__boxs {
-            padding: 0rem 25vw;
+        .most-popular__header {
+            padding: 0rem 2.5vw;
         }
         .most-popular__box__img {
             width: 30vw;
