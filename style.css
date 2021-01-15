@@ -49,15 +49,19 @@
     
     .nav__section,
     .search__section,
-    .hosting__section {
+    .hosting__section,
+    .Activity__section,
+    .Footer__section {
         padding: 0rem 2.5vw;
         width: 95vw;
     }
-    /*Header*/
+    /*Header section*/
     
     #nav__logo {
         justify-self: start;
         padding-top: 40px;
+        min-width: 97px;
+        min-height: 45px;
     }
     
     .nav__section {
@@ -106,7 +110,7 @@
         margin-bottom: 1rem;
     }
     
-    .search__title {
+    .search__header__title {
         margin-bottom: 0.25rem;
     }
     
@@ -369,6 +373,7 @@
     .most-popular__box {
         display: flex;
         flex-direction: row;
+        height: 144px;
         background-color: var(--color-white);
         border-radius: 1.5rem;
         border: 5px solid var(--color-white);
@@ -405,4 +410,304 @@
     
     .most-popular__descp__price {
         font-weight: 600;
+    }
+    /*Activity section*/
+    
+    .Activity__section {
+        margin-bottom: 3rem;
+    }
+    
+    .Activity__header__title {
+        margin-bottom: 2rem;
+    }
+    
+    .Activity__boxs {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        grid-column-gap: 2.5vw;
+    }
+    
+    .Activity__box {
+        display: flex;
+        justify-content: center;
+        border-radius: 1.5rem;
+        box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, 0.2);
+        transition-duration: 0.5s;
+    }
+    
+    .Activity__box:hover {
+        transform: scale(1.05);
+    }
+    
+    .Activity__box--1st {
+        grid-area: 1/ 1/ 3/ 2;
+    }
+    
+    .Activity__box--2nd {
+        grid-area: 1/ 2/ 2/ 3;
+    }
+    
+    .Activity__box--3rd {
+        grid-area: 2/ 2/ 3/ 3;
+    }
+    
+    .Activity__box--4rth {
+        grid-area: 1/ 3/ 3/ 4;
+    }
+    
+    .Activity__box--5th {
+        grid-area: 1/ 4/ 2/ 5;
+    }
+    
+    .Activity__box--6th {
+        grid-area: 2/ 4/ 2/ 5;
+    }
+    
+    .Activity__box__img {
+        width: 100%;
+        height: 11rem;
+        object-fit: cover;
+        border-top-left-radius: 1rem;
+        border-top-right-radius: 1rem;
+    }
+    
+    .Activity__box__img--big {
+        height: 27.5rem;
+    }
+    
+    .Activity__box__name {
+        padding: 1rem;
+    }
+    /*Footer section*/
+    
+    .Footer__section {
+        background-color: var(--color-grey);
+    }
+    
+    .Footer__wrapper {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        padding: 3rem 0rem;
+    }
+    
+    .Footer__col__title {
+        padding-bottom: 1rem;
+    }
+    
+    .Footer__col__items {
+        padding-bottom: 1rem;
+    }
+    /*Responsive part*/
+    /*General*/
+    
+    @media screen and (max-width: 768px) {
+        .search__section,
+        .hosting__section,
+        .Activity__section,
+        .Footer__section {
+            padding: 0rem 5vw;
+            width: 90vw;
+        }
+    }
+    /*Navi section*/
+    
+    @media screen and (max-width: 768px) {
+        .nav__section {
+            margin-bottom: 1rem;
+            padding: 0rem 0vw;
+            width: 100vw;
+        }
+        .nav__wrapper {
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(2, 1fr);
+        }
+        #nav__logo {
+            grid-area: 1/ 1/ 2/ 2;
+            padding-left: 5vw;
+        }
+        .nav__link {
+            padding: 1rem;
+            border-bottom: 2px solid var(--color-grey);
+        }
+        .nav__link:hover {
+            padding-top: 1rem;
+            color: var(--color-blue);
+            border-top: 0px;
+            border-bottom: 2px solid var(--color-blue);
+        }
+        #nav__link--dif {
+            grid-area: 1/ 2/ 2/ 3;
+            order: 2;
+            justify-self: end;
+            padding-right: 5vw;
+        }
+    }
+    /*Search section*/
+    
+    @media screen and (max-width:1018px) {
+        .search__header {
+            margin-right: 0px;
+            margin-bottom: 1rem;
+        }
+        .search__filter {
+            flex-direction: column;
+            align-items: flex-start;
+        }
+        .search__filters {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            grid-row-gap: 1rem;
+        }
+    }
+    
+    @media screen and (max-width: 768px) {
+        .search__header {
+            margin-bottom: 2rem;
+        }
+        .search__form--input {
+            width: 210px;
+            padding: 0rem 4rem 0rem 1rem;
+        }
+        .search__form--button {
+            display: none;
+            z-index: -1;
+        }
+        .search__form__wrapper--icon {
+            display: flex;
+            z-index: 1;
+            border-bottom: 1px solid var(--color-white);
+        }
+    }
+    
+    @media screen and (max-width: 600px) {
+        .search__header {
+            align-items: flex-start;
+        }
+        .search__filter {
+            align-items: flex-start;
+        }
+        .search__filter-title {
+            margin-right: 0px;
+            margin-bottom: 1rem;
+        }
+        .search__filter-elements {
+            grid-column-gap: 0.5rem;
+            justify-content: flex-start;
+        }
+        .search__proposition {
+            justify-content: flex-start;
+        }
+    }
+    /*hosting section*/
+    
+    @media screen and (max-width: 1230px) {
+        .hosting__display {
+            display: flex;
+            flex-direction: column-reverse;
+        }
+        .hosting__wrapper {
+            padding: 2rem 0vw 0rem 0vw;
+            background-color: var(--color-transparent);
+        }
+        .hosting__section__view-more {
+            margin-top: 2rem;
+        }
+    }
+    
+    @media screen and (max-width: 480px) {
+        .hosting__boxs {
+            grid-template-columns: repeat(1, 1fr);
+            grid-template-rows: repeat(6, 1fr);
+            grid-column-gap: 0vw;
+            grid-row-gap: 0.5rem;
+        }
+    }
+    /*Popular section*/
+    
+    @media screen and (max-width: 1230px) {
+        .most-popular__wrapper {
+            margin-left: -2.5vw;
+            width: 95vw;
+            border-radius: 0px;
+        }
+        .most-popular__header,
+        .most-popular__boxs {
+            padding: 0rem 0vw;
+        }
+        .most-popular__boxs {
+            grid-row-gap: 0.5rem;
+        }
+        .most-popular__box__img {
+            width: 50vw;
+        }
+    }
+    
+    @media screen and (max-width: 768px) {
+        .most-popular__wrapper {
+            margin-left: -5vw;
+            width: 95vw;
+        }
+        .most-popular__header,
+        .popular__boxs {
+            padding: 0rem 25vw;
+        }
+        .most-popular__box__img {
+            width: 30vw;
+        }
+    }
+    /*Activity section*/
+    
+    @media screen and (max-width: 1264px) {
+        .Activity__boxs {
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(2, 1fr);
+        }
+        .Activity__box--1st {
+            grid-area: 1/ 1/ 2/ 2;
+        }
+        .Activity__box--2nd {
+            grid-area: 1/ 2/ 2/ 3;
+        }
+        .Activity__box--3rd {
+            grid-area: 1/ 3/ 2/ 4;
+        }
+        .Activity__box--4rth {
+            grid-area: 2/ 1/ 3/ 2;
+        }
+        .Activity__box--5th {
+            grid-area: 2/ 2/ 3/ 3;
+        }
+        .Activity__box--6th {
+            grid-area: 2/ 3/ 3/ 4;
+        }
+        .Activity__box__img--big {
+            height: 11rem;
+        }
+    }
+    
+    @media screen and (max-width: 500px) {
+        .Activity__boxs {
+            display: flex;
+            flex-direction: column;
+        }
+        .Activity__box__img {
+            height: 9rem;
+        }
+    }
+    /*Footer section*/
+    
+    @media screen and (max-width: 1080px) {
+        .Footer__wrapper {
+            display: flex;
+            flex-direction: column;
+            padding: 2rem 0rem 0rem 0rem;
+        }
+        .Footer__col {
+            padding-bottom: 1rem;
+        }
+        .Footer__col__items {
+            padding-bottom: 1rem;
+        }
     }

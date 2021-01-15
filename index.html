@@ -31,7 +31,7 @@
     <section class="search__section">
         <div class="search__wrapper">
             <div class="search__header">
-                <h1 class="search__title">Trouvez votre hébergement pour de vacances de rêve</h1>
+                <h1 class="search__header__title">Trouvez votre hébergement pour de vacances de rêve</h1>
                 <p class="search__subtitle">En plein centre ville ou en pleine nature</p>
             </div>
             <div class="search__form">
@@ -45,7 +45,7 @@
             <!--Filters zone-->
             <div class="search__filter">
                 <div class="search__filter-title">
-                    <h3>Filtres</h3>
+                    <h2>Filtres</h2>
                 </div>
                 <div class="search__filters">
                     <div class="search__filter-elements">
@@ -247,42 +247,74 @@
             </div>
         </section>
         <!--Activity-->
-        <section>
-            <h2>Activités à Marseille</h2>
-            <a class="activity__link" href="#">
-                <img src="assets/images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt="Image du vieux port de Marseille">
-                <h3>Vieux Port</h3>
-                <img src="assets/images/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg" alt="Image du Fort de Pomègues">
-                <h3>Fort de Pomègues</h3>
-                <img src="assets/images/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg" alt="Image des Îles du Frioul">
-                <h3>Îles du Frioul</h3>
-                <img src="assets/images/activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg" alt="Image du Parc National des Calanques">
-                <h3>Parc National des Calanques</h3>
-                <img src="assets/images/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg" alt="Image de Notre-Dame-de-la-garde">
-                <h3>Notre-Dame-de-la-garde</h3>
-                <img src="assets/images/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg" alt="Image du Parc Longchamp">
-                <h3>Parc Longchamp</h3>
-            </a>
+        <section class="Activity__section" id="activity">
+            <h2 class="Activity__header__title">Activités à Marseille</h2>
+            </div>
+            <div class="Activity__boxs">
+                <div class="Activity__box Activity__box--1st">
+                    <a class="activity__link" href="#">
+                        <img class="Activity__box__img Activity__box__img--big" src="assets/images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt="Image du vieux port de Marseille">
+                        <h3 class="Activity__box__name">Vieux Port</h3>
+                    </a>
+                </div>
+                <div class="Activity__box Activity__box--2nd">
+                    <a class="activity__link" href="#">
+                        <img class="Activity__box__img" src="assets/images/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg" alt="Image du Fort de Pomègues">
+                        <h3 class="Activity__box__name">Fort de Pomègues</h3>
+                    </a>
+                </div>
+                <div class="Activity__box Activity__box--3rd">
+                    <a class="activity__link" href="#">
+                        <img class="Activity__box__img" src="assets/images/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg" alt="Image des Îles du Frioul">
+                        <h3 class="Activity__box__name">Îles du Frioul</h3>
+                    </a>
+                </div>
+                <div class="Activity__box Activity__box--4rth">
+                    <a class="activity__link" href="#">
+                        <img class="Activity__box__img Activity__box__img--big" src="assets/images/activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg" alt="Image du Parc National des Calanques">
+                        <h3 class="Activity__box__name">Parc National des Calanques</h3>
+                    </a>
+                </div>
+                <div class="Activity__box Activity__box--5th">
+                    <a class="activity__link" href="#">
+                        <img class="Activity__box__img" src="assets/images/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg" alt="Image de Notre-Dame-de-la-garde">
+                        <h3 class="Activity__box__name">Notre-Dame-de-la-garde</h3>
+                    </a>
+                </div>
+                <div class="Activity__box Activity__box--6th">
+                    <a class="activity__link" href="#">
+                        <img class="Activity__box__img" src="assets/images/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg" alt="Image du Parc Longchamp">
+                        <h3 class="Activity__box__name">Parc Longchamp</h3>
+                    </a>
+                </div>
         </section>
     </main>
     <!--Footer-->
-    <footer>
-        <h2>A propos</h2>
-        <ul>
-            <li><a href="#">Fonctionnement du site</a></li>
-            <li><a href="#">Condition générales de vente</a></li>
-            <li><a href="#">Données et confidentialité</a></li>
-        </ul>
-        <h2>Nos hébergements</h2>
-        <ul>
-            <li><a href="#">Charte de qualité</a></li>
-            <li><a href="#">Soumettre votre hôtel</a></li>
-        </ul>
-        <h2>Assistance</h2>
-        <ul>
-            <li><a href="#">Centre d'aide</a></li>
-            <li><a href="#">Nous contacter</a></li>
-        </ul>
+    <footer class="Footer__section">
+        <div class="Footer__wrapper">
+            <div class="Footer__col">
+                <h2 class="Footer__col__title">A propos</h2>
+                <ul class="Footer__col__list">
+                    <li class="Footer__col__items"><a class="Footer__col__links" href="#">Fonctionnement du site</a></li>
+                    <li class="Footer__col__items"><a class="Footer__col__links" href="#">Condition générales de vente</a></li>
+                    <li class="Footer__col__items"><a class="Footer__col__links" href="#">Données et confidentialité</a></li>
+                </ul>
+            </div>
+            <div class="Footer__col">
+                <h2 class="Footer__col__title">Nos hébergements</h2>
+                <ul class="Footer__col__list">
+                    <li class="Footer__col__items"><a class="Footer__col__links" href="#">Charte de qualité</a></li>
+                    <li class="Footeer__col__items"><a class="Footer__col__links" href="#">Soumettre votre hôtel</a></li>
+                </ul>
+            </div>
+            <div class="Footer__col">
+                <h2 class="Footer__col__title">Assistance</h2>
+                <ul class="Footer__col__list">
+                    <li class="Footer__col__items"><a class="Footer__col__links" href="#">Centre d'aide</a></li>
+                    <li class="Footer__col__items"><a class="Footer__col__links" href="#">Nous contacter</a></li>
+                </ul>
+            </div>
+        </div>
     </footer>
 </body>
 
